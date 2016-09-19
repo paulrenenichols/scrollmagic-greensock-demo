@@ -1,6 +1,6 @@
 var express         = require('express');
 var webpack         = require('webpack');
-var webpackConfig   = require('./webpack.config');
+var webpackConfig   = require('./webpack.config.dev');
 
 // Create Server
 var app = express();

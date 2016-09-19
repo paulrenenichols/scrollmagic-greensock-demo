@@ -5,13 +5,12 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     devtool: 'inline-source-map',
     entry: [
-        'webpack-hot-middleware/client',
         './DemoApp/index.js'
     ],
     output: {
         path: __dirname,
         filename: 'bundle.[hash].js',
-        publicPath: '/'
+        publicPath: ''
     },
     externals: {
     },
