@@ -1,6 +1,6 @@
 {
   "name": "scrollmagic-greensock-demo",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "A React Google Maps Component",
   "main": "bundle.js",
   "scripts": {

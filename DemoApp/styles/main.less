@@ -25,7 +25,7 @@ body.blue {
 }
 
 #scroll-container {
-  width: 1000px;
+  width: 800px;
   margin: 0 auto;
   header, footer {
     height: 600px;
@@ -38,38 +38,44 @@ body.blue {
 }
 
 .scroll-block {
-  height: 800px;
-  margin: 200px 0;
+  height: 600px;
+  margin: 50px 0;
   position: relative;
   background: white;
   border: 2px solid black;
 
-  h1 {
+  div {
     font-family: sans-serif;
     position: relative;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100%;
+
+    span {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3em;
+    }
   }
 }
 
 #red-scroll-block {
   color: red;
-  h1 {
+  div span {
     text-shadow: 2px 2px 3px #ccffdd;
   }
 }
 
 #green-scroll-block {
   color: green;
-  h1 {
+  div span {
     text-shadow: 2px 2px 3px #ffdddd;
   }
 }
 
 #blue-scroll-block {
   color: blue;
-  h1 {
+  div span {
     text-shadow: 2px 2px 3px #fff6bb;
   }
 }
