@@ -5,10 +5,12 @@ var webpackConfig   = require('./webpack.config.dev');
 // Create Server
 var app = express();
 
+app.use(express.static('./'));
+
 var compiler = webpack(webpackConfig);
 app.use(require('webpack-dev-middleware')(compiler, {
     noInfo: true,
-    publicPath: webpackConfig.output.publicPath
+    publicPath: '/'
 }));
 app.use(require('webpack-hot-middleware')(compiler));
 
