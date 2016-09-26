@@ -1,10 +1,10 @@
 {
   "name": "scrollmagic-greensock-demo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A React Google Maps Component",
   "main": "bundle.js",
   "scripts": {
-    "clean": "rm -rf BasicScroll TextOverlay",
+    "clean": "rm -rf BasicScroll TextOverlay PinnedScroll",
     "build": "npm run clean && NODE_ENV=production webpack --config webpack.config.prod.js",
     "lint": "eslint devServer.js",
     "dev": "node devServer.js",
