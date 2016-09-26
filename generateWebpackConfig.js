@@ -25,7 +25,7 @@ function generateWebpackConfig(name, development = true) {
   const devtool = 'inline-source-map';
   const entry   = generateEntry(name, development);
   const output  = {
-    path: path.join(__dirname),
+    path: path.join(__dirname, `${name}`),
     filename: '[name].[hash].js',
     publicPath: ''
   };
@@ -70,7 +70,7 @@ function generateWebpackConfig(name, development = true) {
   const plugins = [
     new HtmlWebpackPlugin({
       template: `src/${name}/index.ejs`,
-      filename: `${name}/index.html`
+      filename: `index.html`
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(true),
