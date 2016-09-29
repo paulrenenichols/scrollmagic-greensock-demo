@@ -45,3 +45,31 @@ h1 {
     right: 10px;
   }
 }
+
+#svg-arc {
+  position: relative;
+  svg {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    fill:none;
+    stroke: #fff;
+    stroke-miterlimit:100;
+    stroke-width:400px;
+    stroke-dasharray: 400 * pi();
+    stroke-dashoffset: 400 * pi();
+    transform: rotate(-90deg);
+  }
+
+  .catbug {
+    position: absolute;
+    background: url('../images/Catbug.png') no-repeat center/50%;
+    width: 200px;
+    height: 200px;
+    top: 26%;
+    left: 43%;
+  }
+}

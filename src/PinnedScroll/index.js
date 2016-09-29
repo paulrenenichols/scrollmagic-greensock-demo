@@ -32,6 +32,11 @@ $(document).ready(function () {
     right: $(window).width() - $('#text-goes-left span').width() - 10
   });
 
+  var tween3 = TweenMax.staggerTo('#svg-arc svg', .5,
+  {
+    strokeDashoffset: 0
+  });
+
   var scene1 = new Scene({
       triggerElement: '#text-goes-right',
       offset: 0,
@@ -52,6 +57,17 @@ $(document).ready(function () {
     .setTween(tween2)
     .addTo(controller);
 
+  var scene3 = new Scene({
+      triggerElement: '#svg-arc',
+      offset: 0,
+      duration: $(window).height(),
+      triggerHook: 0
+    })
+    .setPin('#svg-arc')
+    .setTween(tween3)
+    .addTo(controller);
+
   scene1.addIndicators();
   scene2.addIndicators();
+  scene3.addIndicators();
 });
